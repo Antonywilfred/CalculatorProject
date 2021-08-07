@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" type="text/css" href="calc.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:600,700" rel="stylesheet">
+
+<script>
+    function number(num){
+     var doc= document.getElementById('7').value;
+      alert(doc);
+    }
+</script>
+    
+</head>
+<body>
+
+    <div id="container">
+        <div id="calculator">
+            <div id="result">
+                <div id="history">
+                    <p id="history-value"></p>
+                </div>
+                <div id="output" name="out">
+                    <p  class="ou" id="output-value"></p>
+                </div>
+            </div>
+            <div  class="key" id="keyboard">
+                <button class="operator"  value=" " onclick="clr()" id="clear">C</button>
+                <button class="operator"  onclick="printOutput('.')" id=".">.</button>
+                <button class="operator" onclick="printOutput('%')" id="%">%</button>
+                <button class="operator" onclick="printOutput('+')" id="+">+</button>
+                <button class="number"  onclick="printOutput(7)" id="7">7</button>
+                <button class="number"   onclick="printOutput(8)"  id="8" >8</button>
+                <button class="number" onclick="printOutput(9)" id="9">9</button>
+                <button class="operator" onclick="printOutput('-')" id="-">-</button>
+                <button class="number"  onclick="printOutput(4)"id="4">4</button>
+                <button class="number" onclick="printOutput(5)" id="5">5</button>
+                <button class="number" onclick="printOutput(6)" id="6">6</button>
+                <button class="operator" onclick="printOutput('*')" id="*">*</button>
+                <button class="number" onclick="printOutput(1)" id="1">1</button>
+                <button class="number" onclick="printOutput(2)" id="2">2</button>
+                <button class="number" onclick="printOutput(3)"id="3">3</button>
+                <button class="operator" onclick="printOutput('/')" id="/">/</button>
+                <button class="empty"  id="empty"></button>
+                <button class="number" onclick="printOutput(0)" id="0">0</button>
+                <button class="empty"  id="empty"></button>
+                <button class="operator" onclick="equal()" id="=">=</button>
+            </div>
+
+    
+    </div>
+</div>
+    <script src="calc.js"></script>
+</body>
+</html>
+
+
+
+
+
+<!-- <button id="ad" style="background-color: red; height:35px; border-radius: 10px; color: white;" >addition</button>
+<button style="background-color: red; height:35px; border-radius: 10px; color: white;" onclick="sub()">substration</button>
+<button style="background-color: red; height:35px; border-radius: 10px; color: white;" ondblclick="mul()">multiplication</button>
+<button style="background-color: red; height:35px; border-radius: 10px; color: white;" ondblclick="div()">division</button> -->
+
+
+
+
+

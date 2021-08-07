@@ -1,0 +1,110 @@
+body{
+    font-family:sans-serif;
+    background-image: url(9.jpg);  
+    backface-visibility: hidden;
+    /* background-color: blue; */
+}
+#container{
+    width: 1000px;
+    height: 550px;
+    background-image: url(XMYL.gif);
+    background-color: rgb(185, 210, 247) ;
+    margin: 20px auto;
+    box-shadow: 16px -9px 8px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+
+}
+#calculator{
+    width: 320px;
+    height: 520px;
+    background-color: white;
+    margin: 0 auto;
+    top: 20px;
+    position: relative;
+    border-radius: 5px;
+    box-shadow: 13px -7px 8px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+}
+#result{
+    height: 120px;
+    background-image: url(1.jpg);
+    background-color: #eaf3f5;
+    border-radius: 5px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    overflow: hidden;
+
+}
+#history{
+    text-align: right;
+    height: 20px;
+    margin: 0 20px;
+    padding-top: 20px;
+    font-size: 15px;
+    color:#91919100 ;
+}
+#output{
+    text-align: right; 
+    margin: 10px 20px;
+    height: 60px;
+    color: black;
+    font-size: 30px;
+}
+
+#keyboard{
+    background-color: #063970;
+    background-image: url(1.webp);
+    border-bottom-right-radius: 5px ;
+    border-bottom-left-radius: 5px ;
+    height: 400px;
+}
+
+.operator, .number, .empty{
+    width: 50px;
+    height: 50px;
+    margin: 15px;
+    float: left;
+    border-radius: 50%;
+    border-width: 0;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.number, .empty{
+    background-color: rgb(205, 206, 241);
+    /* background-color: transparent; */
+    /* color: white; */
+}
+
+.number, .operator{
+    cursor: pointer;
+}
+
+.number:active, .operator:active{
+    font-size: 13px;
+}
+
+.empty:focus, .number:focus, .operator:focus{
+    outline: 0;
+}
+
+button:nth-child(4){
+    font-size: 20px;
+    background-color: rgb(250, 162, 206);
+}
+button:nth-child(8){
+    font-size: 20px;
+    background-color: rgb(153, 153, 245);
+}
+button:nth-child(12){
+    font-size: 20px;
+    background-color: rgb(238, 195, 116);
+}
+button:nth-child(16){
+    font-size: 20px;
+    background-color: rgb(247, 122, 122);
+}
+button:nth-child(20){
+    font-size: 20px;
+    background-color: rgb(143, 245, 143);
+}
